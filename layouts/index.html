@@ -1,0 +1,229 @@
+{{ define "main" }}
+<div class="container-fluid">
+  <div class="row">
+    <div class="col col-1 nav-col">
+      <ul class="nav flex-column">
+        <li class="logo">
+          <img src="/img/dd_logo_v_white.png" alt="" width="85" height="85" />
+        </li>
+        {{ range .Site.Menus.main }}
+        <li class="nav-item" id="{{.Name}}">
+          <a class="nav-link" href="#">{{.Name}}</a>
+        </li>
+        {{ end }}
+      </ul>
+    </div>
+    <div class="col col-12 col-lg-10 col-xl-10 main-col">
+      <div class="row justify-content-sm-center justify-content-md-end">
+        {{/* Introduction Container */}}
+        <div class="col col-12 col-sm-10 col-md-4 text-center intro-col">
+          <div class="row">
+            <div class="col col-12 px-0">
+              <h1 class="mt-4">Modern monitoring & analytics</h1>
+              <h3>See inside any stack, any app, at any scale, anywhere.</h3>
+            </div>
+            <div class="col col-12 px-0 align-self-end">
+              <button class="btn try-free-btn-content" type="button">
+                TRY FREE
+              </button>
+            </div>
+          </div>
+        </div>
+
+        {{/* Price Details */}}
+        <div class="col col-sm-11 col-md-8 mt-4 py-4 px-4 price-details-col">
+          <div class="row">
+            <div class="col container-col">
+              <div class="row" id="price-details-row">
+                <div class="col col-4 price-infrastructure-col">
+                  <p class="title"></p>
+                  <p class="price"></p>
+                  <p class="per"></p>
+                  <p class="content"></p>
+                  <p class="list firstDetail"></p>
+                  <p class="list secondDetail"></p>
+                  <p class="list thirdDetail"></p>
+                </div>
+
+                <div class="col col-4 price-apm-col">
+                  <p class="title"></p>
+                  <p class="price"></p>
+                  <p class="per"></p>
+                  <p class="content"></p>
+                  <p class="list firstDetail"></p>
+                  <p class="list secondDetail"></p>
+                  <p class="list thirdDetail"></p>
+                </div>
+
+                <div class="col col-4 price-log-col">
+                  <p class="title"></p>
+                  <p class="price"></p>
+                  <p class="per"></p>
+                  <p class="content"></p>
+                  <p class="list firstDetail"></p>
+                  <p class="list secondDetail"></p>
+                  <p class="list thirdDetail"></p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col col-4 price-infrastructure-col">
+                  <p class="custom-hyperlink">See Details</p>
+                </div>
+                <div class="col col-4 price-apm-col">
+                  <p class="custom-hyperlink">See Details</p>
+                </div>
+                <div class="col col-4 price-log-col">
+                  <p class="custom-hyperlink">See Details</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        {{/* Price Details Btn */}}
+        <div class="col col-12 col-sm-10 px-1 text-center price-btn-col">
+          <button class="btn price-details-btn" type="button">
+            PRICE DETAILS
+          </button>
+        </div>
+        {{/* Product Highlights */}}
+        <div class="col col-12 mt-4 pt-2 highlight-col">
+          <div class="row highlight-row">
+            <div class="col col-2 offset-1">
+              <i class="fa-solid fa-check fa-xl"></i>
+            </div>
+            <div class="col col-8">
+              <p>Get full visibility into modern applications</p>
+            </div>
+            <div class="col col-2 offset-1">
+              <i class="fa-solid fa-check fa-xl"></i>
+            </div>
+            <div class="col col-8">
+              <p>See across systems, apps, and services</p>
+            </div>
+            <div class="col col-2 offset-1">
+              <i class="fa-solid fa-check fa-xl"></i>
+            </div>
+            <div class="col col-8">
+              <p>Anaylize and explore log data in context</p>
+            </div>
+          </div>
+        </div>
+        {{/* APM */}}
+        <div class="col col-sm-11 col-md-6 apm-col">
+          <img src="/img/feature-apm.png" alt="" class="img-fluid" />
+        </div>
+        {{/* Infrastructure */}}
+        <div class="col col-sm-11 col-md-6 infra-col">
+          <img src="/img/infra-bg.png" alt="" class="img-fluid" />
+        </div>
+        {{/* Customers */}}
+        <div class="col col-12 col-sm-11 col-md-6 customer-col">
+          <div class="row log-mng-col">
+            <div class="col col-12 mt-4">
+              <img src="/img/log-mng.png" alt="" class="img-fluid" />
+            </div>
+          </div>
+          <div class="row mt-4">
+            <div class="col container-col">
+              <div class="row">
+                <div class="col col-4 stacked-col">
+                  <div class="row customers">
+                    <div class="col col-12">
+                      <img src="/img/airbnb.png" alt="" class="img-fluid" />
+                    </div>
+                    <div class="col col-12">
+                      <img src="/img/peloton.png" alt="" class="img-fluid" />
+                    </div>
+                  </div>
+                </div>
+                <div class="col col-12 col-xxl-8 review-container">
+                  <img
+                    src="/img/adroll-logo-2x.png"
+                    alt=""
+                    class="img-fluid addroll"
+                  />
+                  <p class="review"></p>
+                  <p class="author"></p>
+                  <p class="role"></p>
+                  <p class="see-more">See More Stories</p>
+                </div>
+              </div>
+              <div class="row customers">
+                <div class="col col-3 single-box-col">
+                  <img src="/img/airbnb.png" alt="" class="img-fluid" />
+                </div>
+                <div class="col col-3 single-box-col">
+                  <img src="/img/peloton.png" alt="" class="img-fluid" />
+                </div>
+                <div class="col col-3 col-xxl-4">
+                  <img src="/img/evernote.png" alt="" class="img-fluid" />
+                </div>
+                <div class="col col-3 col-xxl-4">
+                  <img src="/img/samsung.png" alt="" class="img-fluid" />
+                </div>
+                <div class="col col-3 col-xxl-4">
+                  <img src="/img/nginx.png" alt="" class="img-fluid" />
+                </div>
+                <div class="col col-3 col-xxl-4">
+                  <img src="/img/pagerduty.png" alt="" class="img-fluid" />
+                </div>
+                <div class="col col-3 col-xxl-4">
+                  <img src="/img/wholeFoods.png" alt="" class="img-fluid" />
+                </div>
+                <div class="col col-3 col-xxl-4">
+                  <img src="/img/att.png" alt="" class="img-fluid" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        {{/* Observability */}}
+        <div class="col col-12 col-sm-11 col-md-6 px-4 observability-col">
+          <div class="row observability-container">
+            <div class="col container-col">
+              <div class="row">
+                <div class="col">
+                  <p class="title">OBSERVABILITY</p>
+                </div>
+                <div class="col col-10">
+                  <p class="content">
+                    With turn-key integrations, Datadog seamlessly aggregates
+                    metrics and events across the full devops stack
+                  </p>
+                </div>
+                <div
+                  class="col col-2 d-flex align-items-center justify-content-center pb-3 arrow-col"
+                >
+                  <img
+                    src="/img/arrow-right.png"
+                    alt=""
+                    class="arrow-right img-fluid"
+                  />
+                </div>
+                <div class="col col-12">
+                  <p class="custom-hyperlink">Read More</p>
+                </div>
+                <div class="col col-sm-12 col-md-10 carousel">
+                  <img
+                    src="/img/home-observability.png"
+                    alt=""
+                    class="img-fluid"
+                  />
+                </div>
+
+                <div class="col col-2 carousel next-image-col">
+                  <img
+                    src="/img/home-dashboards.png"
+                    alt=""
+                    class="img-fluid"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{{ end }}

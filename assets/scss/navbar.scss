@@ -1,0 +1,90 @@
+.navbar {
+  background-color: #724eef;
+  --bs-navbar-toggler-focus-width: 1px;
+  --bs-navbar-color: white;
+  .container {
+    margin: 0;
+    width: 50%;
+    padding-left: 5px;
+  }
+  .navbar-toggler {
+    border: 0;
+    :focus {
+      border: 0;
+    }
+  }
+  .navbar-brand {
+    padding-right: 5px;
+  }
+  .nav-item {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    .nav-link {
+      color: white;
+      opacity: 0.7;
+    }
+    .nav-link:hover {
+      opacity: 1;
+    }
+  }
+  #Login {
+    padding-top: 45px;
+  }
+  .offcanvas-header {
+    padding-top: 23px;
+    padding-bottom: 14px;
+  }
+  .offcanvas-body,
+  .offcanvas-header {
+    background-color: #724eef;
+    padding-left: 25px;
+  }
+
+  .try-free-btn {
+    color: #724eef;
+    background-color: white;
+    border-radius: 0;
+    font-weight: 700;
+    margin-top: 40px;
+    height: 60px;
+  }
+
+  .try-free-btn:hover {
+    border: 1px solid white;
+  }
+}
+
+.nav-col {
+  display: none;
+  background-color: #724eef;
+  .nav-link {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    color: #ffffff;
+  }
+
+  .logo {
+    padding-left: 16px;
+    margin-top: 40px;
+    margin-bottom: 35px;
+  }
+
+  .nav-item {
+    margin-bottom: 20px;
+  }
+
+  #Login {
+    margin-top: 25px;
+  }
+}
+
+@media (min-width: 992px) {
+  .navbar {
+    display: none;
+  }
+  .nav-col {
+    display: block;
+    padding-right: 9em;
+  }
+}

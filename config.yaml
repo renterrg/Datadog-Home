@@ -1,0 +1,25 @@
+baseURL: http://example.org/
+languageCode: en-us
+title: Datadog
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+
+menu:
+  main:
+    - name: PRODUCT
+      weight: 10
+    - name: DOCS
+      weight: 20
+    - name: PRICING
+      weight: 30
+    - name: CUSTOMERS
+      weight: 40
+    - name: ABOUT
+      weight: 50
+    - name: BLOG
+      weight: 60
+    - name: Login
+      weight: 70
