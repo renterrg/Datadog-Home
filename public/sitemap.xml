@@ -2,11 +2,11 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://example.org/</loc>
+    <loc>http://datadogrenteria.com/</loc>
     <lastmod>2022-06-13T10:36:00-04:00</lastmod>
   </url><url>
-    <loc>http://example.org/categories.html</loc>
+    <loc>http://datadogrenteria.com/categories.html</loc>
   </url><url>
-    <loc>http://example.org/tags.html</loc>
+    <loc>http://datadogrenteria.com/tags.html</loc>
   </url>
 </urlset>
