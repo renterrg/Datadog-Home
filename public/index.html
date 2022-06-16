@@ -1,342 +1,330 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta name="generator" content="Hugo 0.100.2" />
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Datadog</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
-      crossorigin="anonymous"
-    />
+	<meta name="generator" content="Hugo 0.100.2" /><meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Datadog</title>
+<link
+  href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+  rel="stylesheet"
+  integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+  crossorigin="anonymous"
+/>
 
-    <link href="/scss/main.css" rel="stylesheet" />
-  </head>
-  <body>
-    <nav class="navbar sticky-top">
-      <div class="container">
+
+<link href="/scss/main.css" rel="stylesheet" />
+</head>
+  <body><nav class="navbar sticky-top">
+  <div class="container">
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="offcanvas"
+      data-bs-target="#offcanvasNavbar"
+      aria-controls="offcanvasNavbar"
+    >
+      <span class="navbar-toggler-icon navbar-dark"></span>
+    </button>
+    <div
+      class="offcanvas offcanvas-start"
+      tabindex="-1"
+      id="offcanvasNavbar"
+      aria-labelledby="offcanvasNavbarLabel"
+    >
+      <div class="offcanvas-header">
+        <img src="/img/dd_logo_v_white.png" alt="" width="67" height="67" />
         <button
-          class="navbar-toggler"
           type="button"
-          data-bs-toggle="offcanvas"
-          data-bs-target="#offcanvasNavbar"
-          aria-controls="offcanvasNavbar"
-        >
-          <span class="navbar-toggler-icon navbar-dark"></span>
-        </button>
-        <div
-          class="offcanvas offcanvas-start"
-          tabindex="-1"
-          id="offcanvasNavbar"
-          aria-labelledby="offcanvasNavbarLabel"
-        >
-          <div class="offcanvas-header">
-            <img src="/img/dd_logo_v_white.png" alt="" width="67" height="67" />
-            <button
-              type="button"
-              class="btn-close btn-close-white"
-              data-bs-dismiss="offcanvas"
-              aria-label="Close"
-            ></button>
-          </div>
-          <div class="offcanvas-body">
-            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-              <li class="nav-item" id="PRODUCT">
-                <a class="nav-link" href="#">PRODUCT</a>
-              </li>
-
-              <li class="nav-item" id="DOCS">
-                <a class="nav-link" href="#">DOCS</a>
-              </li>
-
-              <li class="nav-item" id="PRICING">
-                <a class="nav-link" href="#">PRICING</a>
-              </li>
-
-              <li class="nav-item" id="CUSTOMERS">
-                <a class="nav-link" href="#">CUSTOMERS</a>
-              </li>
-
-              <li class="nav-item" id="ABOUT">
-                <a class="nav-link" href="#">ABOUT</a>
-              </li>
-
-              <li class="nav-item" id="BLOG">
-                <a class="nav-link" href="#">BLOG</a>
-              </li>
-
-              <li class="nav-item" id="Login">
-                <a class="nav-link" href="#">Login</a>
-              </li>
-            </ul>
-            <div class="d-grid gap-2 col-10 mx-auto">
-              <button class="btn try-free-btn" type="button">TRY FREE</button>
-            </div>
-          </div>
+          class="btn-close btn-close-white"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="offcanvas-body">
+        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+          
+          <li class="nav-item" id="PRODUCT">
+            <a class="nav-link" href="#">PRODUCT</a>
+          </li>
+          
+          <li class="nav-item" id="DOCS">
+            <a class="nav-link" href="#">DOCS</a>
+          </li>
+          
+          <li class="nav-item" id="PRICING">
+            <a class="nav-link" href="#">PRICING</a>
+          </li>
+          
+          <li class="nav-item" id="CUSTOMERS">
+            <a class="nav-link" href="#">CUSTOMERS</a>
+          </li>
+          
+          <li class="nav-item" id="ABOUT">
+            <a class="nav-link" href="#">ABOUT</a>
+          </li>
+          
+          <li class="nav-item" id="BLOG">
+            <a class="nav-link" href="#">BLOG</a>
+          </li>
+          
+          <li class="nav-item" id="Login">
+            <a class="nav-link" href="#">Login</a>
+          </li>
+          
+        </ul>
+        <div class="d-grid gap-2 col-10 mx-auto">
+          <button class="btn try-free-btn" type="button">TRY FREE</button>
         </div>
       </div>
-      <a class="navbar-brand" href="#"
-        ><img src="/img/dd_logo_h_white.png" alt="" width="108" height="27"
-      /></a>
-    </nav>
+    </div>
+  </div>
+  <a class="navbar-brand" href="#"
+    ><img src="/img/dd_logo_h_white.png" alt="" width="108" height="27"
+  /></a>
+</nav>
 
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col col-1 nav-col">
-          <ul class="nav flex-column">
-            <li class="logo">
-              <img
-                src="/img/dd_logo_v_white.png"
-                alt=""
-                width="85"
-                height="85"
-              />
-            </li>
-
-            <li class="nav-item" id="PRODUCT">
-              <a class="nav-link" href="#">PRODUCT</a>
-            </li>
-
-            <li class="nav-item" id="DOCS">
-              <a class="nav-link" href="#">DOCS</a>
-            </li>
-
-            <li class="nav-item" id="PRICING">
-              <a class="nav-link" href="#">PRICING</a>
-            </li>
-
-            <li class="nav-item" id="CUSTOMERS">
-              <a class="nav-link" href="#">CUSTOMERS</a>
-            </li>
-
-            <li class="nav-item" id="ABOUT">
-              <a class="nav-link" href="#">ABOUT</a>
-            </li>
-
-            <li class="nav-item" id="BLOG">
-              <a class="nav-link" href="#">BLOG</a>
-            </li>
-
-            <li class="nav-item" id="Login">
-              <a class="nav-link" href="#">Login</a>
-            </li>
-          </ul>
-        </div>
-        <div class="col col-12 col-lg-10 col-xl-10 main-col">
-          <div class="row justify-content-sm-center justify-content-md-end">
-            <div class="col col-12 col-sm-10 col-md-4 text-center intro-col">
-              <div class="row">
-                <div class="col col-12 px-0">
-                  <h1 class="mt-4">Modern monitoring & analytics</h1>
-                  <h3>
-                    See inside any stack, any app, at any scale, anywhere.
-                  </h3>
-                </div>
-                <div class="col col-12 px-0 align-self-end">
-                  <button class="btn try-free-btn-content" type="button">
-                    TRY FREE
-                  </button>
-                </div>
-              </div>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col col-1 nav-col">
+      <ul class="nav flex-column">
+        <li class="logo">
+          <img src="/img/dd_logo_v_white.png" alt="" width="85" height="85" />
+        </li>
+        
+        <li class="nav-item" id="PRODUCT">
+          <a class="nav-link" href="#">PRODUCT</a>
+        </li>
+        
+        <li class="nav-item" id="DOCS">
+          <a class="nav-link" href="#">DOCS</a>
+        </li>
+        
+        <li class="nav-item" id="PRICING">
+          <a class="nav-link" href="#">PRICING</a>
+        </li>
+        
+        <li class="nav-item" id="CUSTOMERS">
+          <a class="nav-link" href="#">CUSTOMERS</a>
+        </li>
+        
+        <li class="nav-item" id="ABOUT">
+          <a class="nav-link" href="#">ABOUT</a>
+        </li>
+        
+        <li class="nav-item" id="BLOG">
+          <a class="nav-link" href="#">BLOG</a>
+        </li>
+        
+        <li class="nav-item" id="Login">
+          <a class="nav-link" href="#">Login</a>
+        </li>
+        
+      </ul>
+    </div>
+    <div class="col col-12 col-lg-10 col-xl-10 main-col">
+      <div class="row justify-content-sm-center justify-content-md-end">
+        
+        <div class="col col-12 col-sm-10 col-md-4 text-center intro-col">
+          <div class="row">
+            <div class="col col-12 px-0">
+              <h1 class="mt-4">Modern monitoring & analytics</h1>
+              <h3>See inside any stack, any app, at any scale, anywhere.</h3>
             </div>
-
-            <div
-              class="col col-sm-11 col-md-8 mt-4 py-4 px-4 price-details-col"
-            >
-              <div class="row">
-                <div class="col container-col">
-                  <div class="row" id="price-details-row">
-                    <div class="col col-4 price-infrastructure-col">
-                      <p class="title"></p>
-                      <p class="price"></p>
-                      <p class="per"></p>
-                      <p class="content"></p>
-                      <p class="list firstDetail"></p>
-                      <p class="list secondDetail"></p>
-                      <p class="list thirdDetail"></p>
-                    </div>
-
-                    <div class="col col-4 price-apm-col">
-                      <p class="title"></p>
-                      <p class="price"></p>
-                      <p class="per"></p>
-                      <p class="content"></p>
-                      <p class="list firstDetail"></p>
-                      <p class="list secondDetail"></p>
-                      <p class="list thirdDetail"></p>
-                    </div>
-
-                    <div class="col col-4 price-log-col">
-                      <p class="title"></p>
-                      <p class="price"></p>
-                      <p class="per"></p>
-                      <p class="content"></p>
-                      <p class="list firstDetail"></p>
-                      <p class="list secondDetail"></p>
-                      <p class="list thirdDetail"></p>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col col-4 price-infrastructure-col">
-                      <p class="custom-hyperlink">See Details</p>
-                    </div>
-                    <div class="col col-4 price-apm-col">
-                      <p class="custom-hyperlink">See Details</p>
-                    </div>
-                    <div class="col col-4 price-log-col">
-                      <p class="custom-hyperlink">See Details</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="col col-12 col-sm-10 px-1 text-center price-btn-col">
-              <button class="btn price-details-btn" type="button">
-                PRICE DETAILS
+            <div class="col col-12 px-0 align-self-end">
+              <button class="btn try-free-btn-content" type="button">
+                TRY FREE
               </button>
             </div>
+          </div>
+        </div>
 
-            <div class="col col-12 mt-4 pt-2 highlight-col">
-              <div class="row highlight-row">
-                <div class="col col-2 offset-1">
-                  <i class="fa-solid fa-check fa-xl"></i>
+        
+        <div class="col col-sm-11 col-md-8 mt-4 py-4 px-4 price-details-col">
+          <div class="row">
+            <div class="col container-col">
+              <div class="row" id="price-details-row">
+                <div class="col col-4 price-infrastructure-col">
+                  <p class="title"></p>
+                  <p class="price"></p>
+                  <p class="per"></p>
+                  <p class="content"></p>
+                  <p class="list firstDetail"></p>
+                  <p class="list secondDetail"></p>
+                  <p class="list thirdDetail"></p>
                 </div>
-                <div class="col col-8">
-                  <p>Get full visibility into modern applications</p>
+
+                <div class="col col-4 price-apm-col">
+                  <p class="title"></p>
+                  <p class="price"></p>
+                  <p class="per"></p>
+                  <p class="content"></p>
+                  <p class="list firstDetail"></p>
+                  <p class="list secondDetail"></p>
+                  <p class="list thirdDetail"></p>
                 </div>
-                <div class="col col-2 offset-1">
-                  <i class="fa-solid fa-check fa-xl"></i>
+
+                <div class="col col-4 price-log-col">
+                  <p class="title"></p>
+                  <p class="price"></p>
+                  <p class="per"></p>
+                  <p class="content"></p>
+                  <p class="list firstDetail"></p>
+                  <p class="list secondDetail"></p>
+                  <p class="list thirdDetail"></p>
                 </div>
-                <div class="col col-8">
-                  <p>See across systems, apps, and services</p>
+              </div>
+              <div class="row">
+                <div class="col col-4 price-infrastructure-col">
+                  <p class="custom-hyperlink">See Details</p>
                 </div>
-                <div class="col col-2 offset-1">
-                  <i class="fa-solid fa-check fa-xl"></i>
+                <div class="col col-4 price-apm-col">
+                  <p class="custom-hyperlink">See Details</p>
                 </div>
-                <div class="col col-8">
-                  <p>Anaylize and explore log data in context</p>
+                <div class="col col-4 price-log-col">
+                  <p class="custom-hyperlink">See Details</p>
                 </div>
               </div>
             </div>
-
-            <div class="col col-sm-11 col-md-6 apm-col">
-              <img src="/img/feature-apm.png" alt="" class="img-fluid" />
+          </div>
+        </div>
+        
+        <div class="col col-12 col-sm-10 px-1 text-center price-btn-col">
+          <button class="btn price-details-btn" type="button">
+            PRICE DETAILS
+          </button>
+        </div>
+        
+        <div class="col col-12 mt-4 pt-2 highlight-col">
+          <div class="row highlight-row">
+            <div class="col col-2 offset-1">
+              <i class="fa-solid fa-check fa-xl"></i>
             </div>
-
-            <div class="col col-sm-11 col-md-6 infra-col">
-              <img src="/img/infra-bg.png" alt="" class="img-fluid" />
+            <div class="col col-8">
+              <p>Get full visibility into modern applications</p>
             </div>
-
-            <div class="col col-12 col-sm-11 col-md-6 customer-col">
-              <div class="row log-mng-col">
-                <div class="col col-12 mt-4">
-                  <img src="/img/log-mng.png" alt="" class="img-fluid" />
-                </div>
-              </div>
-              <div class="row mt-4">
-                <div class="col container-col">
-                  <div class="row">
-                    <div class="col col-4 stacked-col">
-                      <div class="row customers">
-                        <div class="col col-12">
-                          <img src="/img/airbnb.png" alt="" class="img-fluid" />
-                        </div>
-                        <div class="col col-12">
-                          <img
-                            src="/img/peloton.png"
-                            alt=""
-                            class="img-fluid"
-                          />
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col col-12 col-xxl-8 review-container">
-                      <img
-                        src="/img/adroll-logo-2x.png"
-                        alt=""
-                        class="img-fluid addroll"
-                      />
-                      <p class="review"></p>
-                      <p class="author"></p>
-                      <p class="role"></p>
-                      <p class="see-more">See More Stories</p>
-                    </div>
-                  </div>
+            <div class="col col-2 offset-1">
+              <i class="fa-solid fa-check fa-xl"></i>
+            </div>
+            <div class="col col-8">
+              <p>See across systems, apps, and services</p>
+            </div>
+            <div class="col col-2 offset-1">
+              <i class="fa-solid fa-check fa-xl"></i>
+            </div>
+            <div class="col col-8">
+              <p>Anaylize and explore log data in context</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col col-sm-11 col-md-6 apm-col">
+          <img src="/img/feature-apm.png" alt="" class="img-fluid" />
+        </div>
+        
+        <div class="col col-sm-11 col-md-6 infra-col">
+          <img src="/img/infra-bg.png" alt="" class="img-fluid" />
+        </div>
+        
+        <div class="col col-12 col-sm-11 col-md-6 customer-col">
+          <div class="row log-mng-col">
+            <div class="col col-12 mt-4">
+              <img src="/img/log-mng.png" alt="" class="img-fluid" />
+            </div>
+          </div>
+          <div class="row mt-4">
+            <div class="col container-col">
+              <div class="row">
+                <div class="col col-4 stacked-col">
                   <div class="row customers">
-                    <div class="col col-3 single-box-col">
+                    <div class="col col-12">
                       <img src="/img/airbnb.png" alt="" class="img-fluid" />
                     </div>
-                    <div class="col col-3 single-box-col">
+                    <div class="col col-12">
                       <img src="/img/peloton.png" alt="" class="img-fluid" />
                     </div>
-                    <div class="col col-3 col-xxl-4">
-                      <img src="/img/evernote.png" alt="" class="img-fluid" />
-                    </div>
-                    <div class="col col-3 col-xxl-4">
-                      <img src="/img/samsung.png" alt="" class="img-fluid" />
-                    </div>
-                    <div class="col col-3 col-xxl-4">
-                      <img src="/img/nginx.png" alt="" class="img-fluid" />
-                    </div>
-                    <div class="col col-3 col-xxl-4">
-                      <img src="/img/pagerduty.png" alt="" class="img-fluid" />
-                    </div>
-                    <div class="col col-3 col-xxl-4">
-                      <img src="/img/wholeFoods.png" alt="" class="img-fluid" />
-                    </div>
-                    <div class="col col-3 col-xxl-4">
-                      <img src="/img/att.png" alt="" class="img-fluid" />
-                    </div>
                   </div>
+                </div>
+                <div class="col col-12 col-xxl-8 review-container">
+                  <img
+                    src="/img/adroll-logo-2x.png"
+                    alt=""
+                    class="img-fluid addroll"
+                  />
+                  <p class="review"></p>
+                  <p class="author"></p>
+                  <p class="role"></p>
+                  <p class="see-more">See More Stories</p>
+                </div>
+              </div>
+              <div class="row customers">
+                <div class="col col-3 single-box-col">
+                  <img src="/img/airbnb.png" alt="" class="img-fluid" />
+                </div>
+                <div class="col col-3 single-box-col">
+                  <img src="/img/peloton.png" alt="" class="img-fluid" />
+                </div>
+                <div class="col col-3 col-xxl-4">
+                  <img src="/img/evernote.png" alt="" class="img-fluid" />
+                </div>
+                <div class="col col-3 col-xxl-4">
+                  <img src="/img/samsung.png" alt="" class="img-fluid" />
+                </div>
+                <div class="col col-3 col-xxl-4">
+                  <img src="/img/nginx.png" alt="" class="img-fluid" />
+                </div>
+                <div class="col col-3 col-xxl-4">
+                  <img src="/img/pagerduty.png" alt="" class="img-fluid" />
+                </div>
+                <div class="col col-3 col-xxl-4">
+                  <img src="/img/wholeFoods.png" alt="" class="img-fluid" />
+                </div>
+                <div class="col col-3 col-xxl-4">
+                  <img src="/img/att.png" alt="" class="img-fluid" />
                 </div>
               </div>
             </div>
+          </div>
+        </div>
+        
+        <div class="col col-12 col-sm-11 col-md-6 px-4 observability-col">
+          <div class="row observability-container">
+            <div class="col container-col">
+              <div class="row">
+                <div class="col">
+                  <p class="title">OBSERVABILITY</p>
+                </div>
+                <div class="col col-10">
+                  <p class="content">
+                    With turn-key integrations, Datadog seamlessly aggregates
+                    metrics and events across the full devops stack
+                  </p>
+                </div>
+                <div
+                  class="col col-2 d-flex align-items-center justify-content-center pb-3 arrow-col"
+                >
+                  <img
+                    src="/img/arrow-right.png"
+                    alt=""
+                    class="arrow-right img-fluid"
+                  />
+                </div>
+                <div class="col col-12">
+                  <p class="custom-hyperlink">Read More</p>
+                </div>
+                <div class="col col-sm-12 col-md-10 carousel">
+                  <img
+                    src="/img/home-observability.png"
+                    alt=""
+                    class="img-fluid"
+                  />
+                </div>
 
-            <div class="col col-12 col-sm-11 col-md-6 px-4 observability-col">
-              <div class="row observability-container">
-                <div class="col container-col">
-                  <div class="row">
-                    <div class="col">
-                      <p class="title">OBSERVABILITY</p>
-                    </div>
-                    <div class="col col-10">
-                      <p class="content">
-                        With turn-key integrations, Datadog seamlessly
-                        aggregates metrics and events across the full devops
-                        stack
-                      </p>
-                    </div>
-                    <div
-                      class="col col-2 d-flex align-items-center justify-content-center pb-3 arrow-col"
-                    >
-                      <img
-                        src="/img/arrow-right.png"
-                        alt=""
-                        class="arrow-right img-fluid"
-                      />
-                    </div>
-                    <div class="col col-12">
-                      <p class="custom-hyperlink">Read More</p>
-                    </div>
-                    <div class="col col-sm-12 col-md-10 carousel">
-                      <img
-                        src="/img/home-observability.png"
-                        alt=""
-                        class="img-fluid"
-                      />
-                    </div>
-
-                    <div class="col col-2 carousel next-image-col">
-                      <img
-                        src="/img/home-dashboards.png"
-                        alt=""
-                        class="img-fluid"
-                      />
-                    </div>
-                  </div>
+                <div class="col col-2 carousel next-image-col">
+                  <img
+                    src="/img/home-dashboards.png"
+                    alt=""
+                    class="img-fluid"
+                  />
                 </div>
               </div>
             </div>
@@ -344,83 +332,85 @@
         </div>
       </div>
     </div>
-    <div class="row footer justify-content-lg-end px-3">
-      <div class="col col-lg-11 container-col">
-        <div class="row">
-          <div class="col col-12 col-lg-2 px-0">
-            <button class="btn free-trial-btn" type="button">FREE TRIAL</button>
-            <p class="trademark-lg">© Datadog 2017</p>
+  </div>
+</div>
+<div class="row footer justify-content-lg-end px-3">
+  <div class="col col-lg-11 container-col">
+    <div class="row">
+      <div class="col col-12 col-lg-2 px-0">
+        <button class="btn free-trial-btn" type="button">FREE TRIAL</button>
+        <p class="trademark-lg">© Datadog 2017</p>
+      </div>
+      <div class="col col-12 col-lg-4 offset-lg-2 mt-4">
+        <div class="row section-content">
+          <div class="col col-12">
+            <span class="section-title">Product</span>
+            <hr />
           </div>
-          <div class="col col-12 col-lg-4 offset-lg-2 mt-4">
-            <div class="row section-content">
-              <div class="col col-12">
-                <span class="section-title">Product</span>
-                <hr />
-              </div>
-              <div class="col col-6">
-                <p>Features</p>
-                <p>APM</p>
-                <p>Integrations</p>
-                <p>Alerts</p>
-                <p>API</p>
-              </div>
-              <div class="col col-6">
-                <p>Documentation</p>
-                <p>Support</p>
-                <p>Resources</p>
-                <p>Security</p>
-              </div>
-            </div>
+          <div class="col col-6">
+            <p>Features</p>
+            <p>APM</p>
+            <p>Integrations</p>
+            <p>Alerts</p>
+            <p>API</p>
           </div>
-          <div class="col col-6 col-lg-2 mt-4">
-            <div class="row section-content">
-              <div class="col col-12">
-                <span class="section-title">About</span>
-                <hr />
-              </div>
-              <div class="col">
-                <p>Contact Us</p>
-                <p>Partners</p>
-                <p>Press</p>
-                <p>Our Team</p>
-                <p>Careers</p>
-                <p>Legal</p>
-              </div>
-            </div>
-          </div>
-          <div class="col col-6 col-lg-2 mt-4">
-            <div class="row section-content">
-              <div class="col col-12">
-                <span class="section-title">Social</span>
-                <hr />
-              </div>
-              <div class="col">
-                <p>Blog</p>
-                <p>Espanol</p>
-                <p>Japanese</p>
-                <p>Instagram</p>
-                <p>Twitter</p>
-              </div>
-            </div>
-          </div>
-          <div class="col col-12 col-lg-10 terms text-center">
-            <p>Terms | Privacy | Cookies</p>
-          </div>
-          <div class="col col-12 trademark-md text-center">
-            <p>© Datadog 2017</p>
+          <div class="col col-6">
+            <p>Documentation</p>
+            <p>Support</p>
+            <p>Resources</p>
+            <p>Security</p>
           </div>
         </div>
       </div>
+      <div class="col col-6 col-lg-2 mt-4">
+        <div class="row section-content">
+          <div class="col col-12">
+            <span class="section-title">About</span>
+            <hr />
+          </div>
+          <div class="col">
+            <p>Contact Us</p>
+            <p>Partners</p>
+            <p>Press</p>
+            <p>Our Team</p>
+            <p>Careers</p>
+            <p>Legal</p>
+          </div>
+        </div>
+      </div>
+      <div class="col col-6 col-lg-2 mt-4">
+        <div class="row section-content">
+          <div class="col col-12">
+            <span class="section-title">Social</span>
+            <hr />
+          </div>
+          <div class="col">
+            <p>Blog</p>
+            <p>Espanol</p>
+            <p>Japanese</p>
+            <p>Instagram</p>
+            <p>Twitter</p>
+          </div>
+        </div>
+      </div>
+      <div class="col col-12 col-lg-10 terms text-center">
+        <p>Terms | Privacy | Cookies</p>
+      </div>
+      <div class="col col-12 trademark-md text-center">
+        <p>© Datadog 2017</p>
+      </div>
     </div>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
-      crossorigin="anonymous"
-    ></script>
-    <script type="module" src="/js/main.js"></script>
-    <script
-      src="https://kit.fontawesome.com/c3e2e06997.js"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+  </div>
+</div>
+<script
+  src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+  crossorigin="anonymous"
+></script>
+<script type="module" src="/js/main.js"></script>
+<script
+  src="https://kit.fontawesome.com/c3e2e06997.js"
+  crossorigin="anonymous"
+></script>
+</body>
 </html>
