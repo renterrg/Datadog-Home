@@ -1,7 +1,6 @@
 baseURL: http://datadogrenteria.com/
 languageCode: en-us
 title: Datadog
-uglyurls: true
 
 markup:
   goldmark:
