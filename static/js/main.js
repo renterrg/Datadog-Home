@@ -34,7 +34,9 @@ async function populateLatestReview() {
     const reviewContainer = document.getElementsByClassName("review-container");
     for (const property in latestReview) {
       const p = reviewContainer[0].getElementsByClassName(property);
-      p[0].textContent = latestReview[property];
+      if (p && p[0]) {
+        p[0].textContent = latestReview[property];
+      }
     }
   } catch (error) {
     console.error(error);
