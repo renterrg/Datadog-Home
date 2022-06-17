@@ -1,6 +1,12 @@
 .footer {
   background: linear-gradient(180deg, #443e48 0%, #110617 100%);
   margin-right: 0;
+
+  .button-col {
+    padding-left: 12px;
+    padding-right: 0px;
+  }
+
   .free-trial-btn {
     background-color: transparent;
     width: 100%;
@@ -63,6 +69,10 @@
 @media (min-width: 992px) {
   .footer {
     height: 23em;
+
+    .button-col {
+      padding-left: 0px;
+    }
 
     .terms {
       margin-top: 90px;
